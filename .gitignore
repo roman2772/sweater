@@ -1,4 +1,5 @@
 .idea
 *.iml
 src/test/
-target/
+target/classes/*
+target/generated-sources/*
