@@ -41,14 +41,14 @@ public class UserController {
             @RequestParam("userId") User user) {
         user.setUsername(username);
 
-        Set<String> roles = Arrays.stream(Role.values())
+        Set<String> roleList = Arrays.stream(Role.values())
                 .map(Role::name)
                 .collect(Collectors.toSet());
 
         user.getRoles().clear();
 
         for (String key : form.keySet()) {
-            if (roles.contains(key)) {
+            if (roleList.contains(key)) {
                 user.getRoles().add(Role.valueOf(key));
             }
         }
