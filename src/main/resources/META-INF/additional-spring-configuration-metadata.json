@@ -4,6 +4,11 @@
       "name": "upload.path",
       "type": "java.lang.String",
       "description": "Description for upload.path."
+    },
+    {
+      "name": "recaptcha.secret",
+      "type": "java.lang.String",
+      "description": "Description for recaptcha.secret."
     }
   ]
 }
